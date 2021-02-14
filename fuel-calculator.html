@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="apple-itunes-app" content="app-id=899080780">
-        <title>George Richardson Apps</title>
+        <title>Fuel Calculator // GR Apps</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;900&family=Source+Code+Pro:wght@400;700&display=swap">
@@ -24,17 +24,17 @@
             .hello-world {
                 text-align: center;
                 margin: auto;
-                padding: 0 2.5rem;
+                padding: 0 2rem;
             }
             .placeholder {
                 margin: 0;
                 display: grid;
-
+                /*
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: 100%;*/
             }
             .placeholder h1 {
                 margin: 0 0 2rem;
@@ -43,6 +43,7 @@
                 margin: 2rem 0 0;
                 font-weight: 200;
             }
+            /*
             .site-header {
                 position: absolute;
                 top: 0;
@@ -54,7 +55,7 @@
                 bottom: 0;
                 left: 0;
                 width: 100%;
-            }
+            }*/
             .site-title .full-name {
                 display: none;
             }
@@ -79,6 +80,22 @@
           }
           .download-badge img {
               width: 25%;
+              min-width: 10em;
+          }
+
+          img {
+              width: 100%;
+              height: auto;
+          }
+
+          .app-logo__container {
+              max-width: 350px;
+              margin: 1rem auto 2.3rem;
+          }
+          .app-logo {
+              display: block;
+              box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
+              border-radius: 22%;
           }
         </style>
 </head>
@@ -91,6 +108,9 @@
     <main class="placeholder">
         <div class="hello-world">
             <header class="header page-header">
+                <div class="app-logo__container">
+                    <img class="app-logo" src="assets/fuel-calculator.png" alt="" width="350px" height="350px">
+                </div>
                 <h1 class="page-title">Fuel Calculator</h1>
                 <p class="page-subtitle">Calculate the cost of fuel for a journey quickly and easily with Fuel Calculator. Simply enter the distance travelled, cost of fuel and car fuel consumption.</p>
                 <p class="download-badge">
