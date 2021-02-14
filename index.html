@@ -54,6 +54,20 @@
                 left: 0;
                 width: 100%;
             }
+            .site-title .full-name {
+                display: none;
+            }
+            .site-title .initials {
+                display: inline;
+            }
+            @media(min-width: 37.5em) {
+                .site-title .full-name {
+                    display: inline;
+                }
+                .site-title .initials {
+                    display: none;
+                }
+            }
           .site-title .edition {
             text-transform: none;
             font-weight: 200;
@@ -66,7 +80,7 @@
     <body>
         <header class="header site-header">
             <div class="header__inner">
-                <div class="site-title name"><a href="/">George&nbsp;Richardson<span class="edition">Apps</span></a></div>
+                <div class="site-title name"><a href="/"><span class="full-name">George&nbsp;Richardson</span><span class="iniitals">GR</span><span class="edition">Apps</span></a></div>
             </div>
         </header>
         <main class="placeholder">
