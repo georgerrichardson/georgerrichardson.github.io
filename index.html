@@ -29,11 +29,11 @@
                 margin: 0;
                 display: grid;
 
-                position: absolute;
+                /*position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: 100%;*/
             }
             .placeholder h1 {
                 margin: 0 0 2rem;
@@ -42,18 +42,18 @@
                 margin: 2rem 0 0;
                 font-weight: 200;
             }
-            .site-header {
+            /*.site-header {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
-            }
-            .site-footer {
+            }*/
+            /*.site-footer {
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 width: 100%;
-            }
+            }*/
             .site-title .full-name {
                 display: none;
             }
@@ -80,8 +80,57 @@
             <div class="hello-world">
                 <header class="header page-header">
                     <h1 class="page-title">George Richardson Apps</h1>
-                    <p class="page-subtitle">coming soon</p>
                 </header>
+                <div class="apps">
+                    <div class="app">
+                        <a href="/fuel-calculator.html">
+                            <img class="app-logo" src="assets/fuel-calculator.png" alt="">
+                            <h2 class="app-name">Fuel Calculator</h2>
+                        </a>
+                    </div>
+                    <div class="app">
+                        <a href="mpg-calculator.html">
+                            <img class="app-logo" src="assets/mpg-calculator.png" alt="">
+                            <h2 class="app-name">MPG Calculator</h2>
+                        </a>
+                    </div>
+                    <style>
+                        .app {
+                            max-width: 250px;
+
+                            margin: 1rem 3rem;
+                        }
+                        .app .app-logo {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            margin-bottom: 1.5rem;
+
+                            box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.5);
+                            border-radius: 22%;
+
+                            transition: .3s ease;
+                        }
+                        .app a:hover .app-logo {
+                            box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.5);
+                        }
+                        .app .app-name {
+                            font-weight: 600;
+                            font-size: 1.8em;
+                        }
+                        .app a {
+                            color: inherit;
+                            text-decoration: none;
+                        }
+                    </style>
+                </div>
+                <style>
+                    .apps {
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;
+                    }
+                </style>
             </div>
         </main>
         <footer class="footer site-footer">
